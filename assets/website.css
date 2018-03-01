@@ -149,6 +149,7 @@ body,
 }
 .page-inner {
     max-width: 830px;
+    padding: 20px 15px 160px 15px;
 }
 
 
@@ -377,5 +378,10 @@ body,
 .book .book-body .page-wrapper .page-inner section.normal code .xml .hljs-cdata {
     color: #C3E88D;
 }
-
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-comment, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-comment, 
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-title, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-title {
+    color: #90A4AE;
+}
 
