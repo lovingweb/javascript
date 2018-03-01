@@ -161,7 +161,7 @@ body,
 }
 .markdown-section h2 {
     margin-top: 1.75em;
-    font-size: 1.7em;
+    font-size: 1.777778em;
     font-weight: 400;
 }
 .markdown-section h2::before {
@@ -169,12 +169,12 @@ body,
     display: block;
     width: 4rem;
     height: 1px;
-    margin-bottom: 4rem;
+    margin: 6rem 0 4rem;
     background: #94a9b3;
 }
 .markdown-section h3 {
     margin-top: 2em;
-    font-size: 1.2em;
+    font-size: 1.333333em;
     font-weight: 700;
 }
 .markdown-section p.sub-title {
@@ -184,9 +184,16 @@ body,
     padding: .2em .5em .2em .6em;
     margin: 0 .2em;
     background-color: #f2f3fa;
-    font-family: "Fira Code", "Noto Sans KR", monospace;
+    font-family: "Fira Code", "Noto Sans KR", "Malgun Gothic", monospace;
     font-weight: 300;
     font-size: 0.833333em;
+}
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    .markdown-section code {
+        font-weight: 400;
+    }
 }
 .markdown-section code:after, 
 .markdown-section code:before {
