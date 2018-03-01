@@ -164,14 +164,6 @@ body,
     font-size: 1.777778em;
     font-weight: 400;
 }
-.markdown-section h2::before {
-    content: '';
-    display: block;
-    width: 4rem;
-    height: 1px;
-    margin: 6rem 0 4rem;
-    background: #94a9b3;
-}
 .markdown-section h3 {
     margin-top: 2em;
     font-size: 1.333333em;
@@ -179,6 +171,15 @@ body,
 }
 .markdown-section p.sub-title {
     font-size: 0.888888em;
+}
+.markdown-section h2::before,
+.markdown-section p.sub-title + p {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 1px;
+    margin: 6rem 0 4rem;
+    background: #94a9b3;
 }
 .markdown-section code {
     padding: .2em .5em .2em .6em;
