@@ -16,7 +16,7 @@
 |연산자|수행되는 연산|결합방향|피연산자 개수|피연산자 타입|반환|
 |:---:|---|:---:|:---:|---|---|
 |`&&`|논리 AND|L->R|2|타입 무방, 타입 무방|타입 무방|
-|`||`|논리 OR|L->R|2|타입 무방, 타입 무방|타입 무방|
+|<code>||</code>|논리 OR|L->R|2|타입 무방, 타입 무방|타입 무방|
 |`!`|논리 NOT|R->L|1|Boolean|Boolean|
 
 ## 1. 논리 AND (A && B)
@@ -38,7 +38,7 @@ false && "Cat" // false
 "Cat" && false // false
 ```
 
-`&&` 연산자는 좌변에 있는 첫번때 파연산자의 표현식을 먼저 평가하기 때문에, 좌변의 값이 'falsy'이면 우변의 표현식은 평가하지 않는다.  
+`&&` 연산자는 좌변에 있는 첫 번째 파연산자의 표현식을 먼저 평가하기 때문에 좌변의 값이 'falsy'이면 우변의 표현식은 평가하지 않는다.  
 이를 단축 평가 <sup>Short-Circuit evaluation</sup>라고 부른다.
 
 ```js
@@ -103,4 +103,4 @@ var max = max_width || preferences.max_width || 500;
 !(p || q) === !p && !q
 ```
 
-[Converting AND to OR 참고](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/%EB%85%BC%EB%A6%AC_%EC%97%B0%EC%82%B0%EC%9E%90(Logical_Operators)#Conversion_rules)
+[Converting AND to OR 참고](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Conversion_rules)
