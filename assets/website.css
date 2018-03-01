@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+@font-face{
+	font-family: 'Fira Code';
+	src: url('fonts/FiraCode/FiraCode-Light.eot');
+	src: url('fonts/FiraCode/FiraCode-Light.eot') format('embedded-opentype'),
+	url('fonts/FiraCode/FiraCode-Light.woff2') format('woff2'),
+	url('fonts/FiraCode/FiraCode-Light.woff') format('woff'),
+	url('fonts/FiraCodeFiraCode-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Fira Code';
+	src: url('fonts/FiraCode/FiraCode-Regular.eot');
+	src: url('fonts/FiraCode/FiraCode-Regular.eot') format('embedded-opentype'),
+	url('fonts/FiraCode/FiraCode-Regular.woff2') format('woff2'),
+	url('fonts/FiraCode/FiraCode-Regular.woff') format('woff'),
+	url('fonts/FiraCode/FiraCode-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Iropke Batang';
+	src: url('fonts/IropkeBatangM.eot');
+	src: url('fonts/IropkeBatangM.eot') format('embedded-opentype'),
+	url('fonts/IropkeBatangM.woff') format('woff'),
+	url('fonts/IropkeBatangM.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* Font */
+body,
+.book.font-family-0,
+.book.font-family-1 ,
+.markdown-section,
+.book-header,
+.book-summary,
+.book-body {
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Serif','Iropke Batang', serif;
+	font-size: 1.8rem;
+    line-height: 1.8;
+    letter-spacing: 0;
+}
+.book-summary {
+    font-size: 1.6rem;
+}
+.book.font-size-0 .book-body .page-inner section {
+    font-size: 1.4rem;
+}
+.book.font-size-1 .book-body .page-inner section {
+    font-size: 1.6rem;
+}
+.book.font-size-2 .book-body .page-inner section {
+    font-size: 1.8rem;
+}
+.book.font-size-3 .book-body .page-inner section {
+    font-size: 2.2rem;
+}
+.book.font-size-4 .book-body .page-inner section {
+    font-size: 4rem;
+}
+
+/* Color */
+body,
+.book.font-family-0,
+.book.font-family-1,
+.markdown-section,
+.book-body,
+.book-summary,
+.book-summary ul.summary li a, 
+.book-summary ul.summary li span,
+.markdown-section blockquote,
+.markdown-section dl,
+.markdown-section table code,
+.book-header .btn:hover,
+.book-header .btn:focus,
+.book-header .btn:active {
+    color: #455a64;
+}
+.book-summary ul.summary .custom-link,
+.book-summary ul.summary li.active > a,
+.markdown-section code,
+.markdown-section a,
+.markdown-section dl dt {
+    color: #5a62d7;
+}
+::-moz-selection,
+::selection {
+    color: #fff;
+    background-color: #5a62d7;
+}
+#book-search-input input::placeholder,
+.book-header,
+.book-header .btn {
+    color: #CFD8DC;
+}
+
+/* Layout */
+.book-summary {
+    background: transparent;
+    border-right: 1px solid rgba(207, 216, 220, .5);
+}
+#book-search-input {
+    position: absolute;
+    top: 88px;
+    margin: 0;
+    padding: 6px 12px;
+    border: 0;
+    background: transparent;
+}
+.book-summary ul.summary {
+    padding-top: 132px;
+}
+.book-summary ul.summary .custom-link {
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    height: 60px;
+    padding: 0;
+    line-height: 60px;
+    font-size: 27px;
+    font-weight: 400;
+}
+.book-summary ul.summary .custom-link::before {
+    content: 'LW';
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+    background-color: #5a62d7;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+
+}
+.book-summary ul.summary li.divider {
+    background-color: rgba(207, 216, 220, .4);
+}
+.book-summary ul.summary li a, 
+.book-summary ul.summary li span {
+    padding: .75rem 18px;
+}
+.page-inner {
+    max-width: 830px;
+}
+
+
+/* Markdown Section */
+.markdown-section h1 {
+    margin: 0;
+    font-size: 2.333333em;
+    font-weight: 400;
+}
+.markdown-section h2 {
+    margin-top: 1.75em;
+    font-size: 1.7em;
+    font-weight: 400;
+}   
+.markdown-section h3 {
+    margin-top: 2em;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.markdown-section p.sub-title {
+    font-size: 0.888888em;
+}
+.markdown-section p.sub-title::after {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 1px;
+    margin: 5rem 0 4rem;
+    background: #94a9b3;
+}
+.markdown-section code {
+    padding: .2em .5em .2em .6em;
+    margin: 0 .2em;
+    background-color: #f2f3fa;
+    font-family: "Fira Code", "Noto Sans KR", monospace;
+    font-weight: 300;
+    font-size: 0.833333em;
+}
+.markdown-section code:after, 
+.markdown-section code:before {
+    letter-spacing: -.2em;
+    content: "\00a0";
+    width: 0;
+    display: inline-block;
+}
+.markdown-section pre {
+    position: relative;
+    padding: 2.5rem 3.5rem;
+    background-color: #263238;
+}
+.markdown-section pre code {
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: #e9eded;
+    line-height: 1.6;
+}
+.markdown-section pre code::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: auto;
+    padding: 0 10px;
+    height: 24px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0;
+}
+.markdown-section pre code.lang-js::before {
+    content: 'javascript';
+    background-color: #5a62d7;
+}
+.markdown-section table code {
+    font-size: 1em;
+    background-color: transparent;
+}
+.markdown-section a {
+    text-decoration: none;
+    border-bottom: 1px dotted #5a62d7;
+}
+.markdown-section a:active, 
+.markdown-section a:focus, 
+.markdown-section a:hover {
+    outline: 0;
+    text-decoration: none;
+    border-bottom: 1px solid #5a62d7;
+}
+.markdown-section strong {
+    font-weight: 400;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    color: #3b4c54;
+}
+.markdown-section strong::after {
+    content: '';
+    background: #bcffdf;
+    width: 100%;
+    position: absolute;
+    height: 8px;
+    left: 0;
+    top: 50%;
+    z-index: -1;
+}
+.markdown-section table td, .markdown-section table th {
+    padding: 6px 13px;
+    border: 1px solid rgba(207, 216, 220, .5);
+}
+.markdown-section table tr:nth-child(2n) {
+    background-color: rgba(236, 239, 241, .5);
+}
+.markdown-section table th {
+    font-weight: 400;
+}
+.markdown-section blockquote {
+    padding: 1.5rem 2.5rem;
+    border-left: 4px solid #5a62d7;
+    background-color: #f2f3fa;
+}
+.markdown-section blockquote p {
+    margin: 0;
+}
+.markdown-section blockquote p + p {
+    margin-bottom: .85em;
+}
+.markdown-section dl dt,
+.markdown-section dl dd {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    background: rgba(236, 239, 241, 0.5);
+}
+.markdown-section dl dt {
+    padding: 2rem 3.5rem 0;
+}
+.markdown-section dl dd {
+    padding: .2rem 3.5rem 2rem;
+}
+.markdown-section dl dd + dt {
+    margin-top: 2px;
+}
+.markdown-section sub,
+.markdown-section sup {
+  font-size: 0.8em !important;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-section sub {
+  bottom: -0.2em;
+}
+.markdown-section sup {
+  top: -0.4em;
+}
+.markdown-section blockquote a,
+.markdown-section sub a,
+.markdown-section sup a {
+    border: 0;
+}
+
+/* Code Highlight */
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-keyword, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-keyword {
+    color: #c792ea;
+}
+.book .book-body .page-wrapper .page-inner section.normal pre .javascript .hljs-function, 
+.book .book-body .page-wrapper .page-inner section.normal code .javascript .hljs-function {
+
+}
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-number, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-number {
+
+}
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-preprocessor, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-preprocessor {
+
+}
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-pragma, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-pragma {
+
+}
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-built_in, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-built_in {
+    color: #82B1FF;
+}
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-literal, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-literal {
+    color: #F77669;
+}
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-params, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-params {
+
+}
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-constant, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-constant {
+    color: #82B1FF;
+}
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-string, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-string {
+    color: #80CBAE;
+}
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-value, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-value {
+
+}
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-inheritance, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-inheritance {
+
+}
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-header, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-header {
+
+}
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-addition, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-addition {
+
+}
+.book .book-body .page-wrapper .page-inner section.normal pre .ruby .hljs-symbol, 
+.book .book-body .page-wrapper .page-inner section.normal code .ruby .hljs-symbol {
+
+}
+.book .book-body .page-wrapper .page-inner section.normal pre .xml .hljs-cdata, 
+.book .book-body .page-wrapper .page-inner section.normal code .xml .hljs-cdata {
+    color: #C3E88D;
+}
+
+

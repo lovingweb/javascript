@@ -1,0 +1,18 @@
+{
+    "styles": {
+        "website": "assets/website.css",
+        "ebook": "assets/ebook.css",
+        "pdf": "assets/pdf.css",
+        "mobi": "assets/mobi.css",
+        "epub": "assets/epub.css"
+    },
+
+    "plugins": ["scripts"],
+    "pluginsConfig": {
+        "scripts": {
+            "files": [
+                "assets/myscript.js"
+            ]
+        }
+    }
+}
