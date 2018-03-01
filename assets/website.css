@@ -173,7 +173,7 @@ body,
     font-size: 0.888888em;
 }
 .markdown-section h2::before,
-.markdown-section p.sub-title + p {
+.markdown-section p.sub-title + p::before {
     content: '';
     display: block;
     width: 4rem;
