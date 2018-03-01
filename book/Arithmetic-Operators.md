@@ -10,14 +10,14 @@
 
 |연산자|수행되는 연산|결합방향|피연산자 개수|피연산자 타입|반환|
 |:---:|---|:---:|:---:|---|---|
-|`+`|덧셈 <sup>Addition</sup>|L->R|2|number, number|number|
-|`+`|결합 <sup>concatenation</sup>|L->R|2|string, string|string|
-|`-`|뺄셈 <sup>Subtraction</sup>|L->R|2|number, number|number|
-|`*`|곱셈 <sup>Multiplication</sup>|L->R|2|number, number|number|
-|`/`|나눗셈 <sup>Division</sup>|L->R|2|number, number|number|
-|`%`|나머지 <sup>Modulus</sup>|L->R|2|number, number|number|
+|`+`|덧셈|L->R|2|number, number|number|
+|`+`|결합|L->R|2|string, string|string|
+|`-`|뺄셈|L->R|2|number, number|number|
+|`*`|곱셈|L->R|2|number, number|number|
+|`/`|나눗셈|L->R|2|number, number|number|
+|`%`|나머지|L->R|2|number, number|number|
 
-### 1.1 덧셈 연산자 (+) <sup>Addition</sup>
+### 1.1 덧셈 연산자 (+) <sup>Addition / Concatenation</sup>
 
 `+`연산자가 이항 연산자로 사용될 때는 파연산자 숫자 값을 더하거나 문자열을 합친 값을 반환한다.  
 두 피연산자 값이 모두 숫자거나 문자열인 경우에는 `+`연산자가 하는 일이 명확하다.
@@ -63,7 +63,7 @@ false + false // 0
 1 + (2 + "장 주세요") // "12장 주세요"
 ```
 
-### 1.2 뺄셈 연산자 (-)
+### 1.2 뺄셈 연산자 (-) <sup>Subtraction</sup>
 
 `-` 연산자는 두 개의 피연산자를 뺀 값을 반환한다.
 
@@ -74,7 +74,7 @@ false + false // 0
 "foo" - 3   // NaN
 ```
 
-### 1.3 곱셈 연산자 (*)
+### 1.3 곱셈 연산자 (*) <sup>Multiplication</sup>
 
 `*` 연산자는 두 개의 피연산자를 곱한 값을 반환한다.
 
@@ -89,7 +89,7 @@ Infinity * Infinity // Infinity
 
 ```
 
-### 1.4 나눗셈 연산자 (/)
+### 1.4 나눗셈 연산자 (/) <sup>Division</sup>
 
 `/` 연산자는 왼쪽 피연산자의 값을 오른쪽 피연산자의 값으로 나눈 몫을 반환한다.
 
@@ -102,7 +102,7 @@ Infinity * Infinity // Infinity
 2.0 / -0.0 // returns -Infinity in JavaScript
 ```
 
-### 1.5 나머지 연산자 (%)
+### 1.5 나머지 연산자 (%) <sup>Modulus</sup>
 
 `%` 연산자는 하나의 피연산자가 두 번째 피연산자로 나누어질 때 남은 부분값을 반환한다.
 
@@ -118,12 +118,12 @@ NaN % 2 // NaN
 
 |연산자|수행되는 연산|결합방향|피연산자 개수|피연산자 타입|반환|
 |:---:|---|:---:|:---:|---|---|
-|`+`|숫자화 연산자 <sup>Unary plus</sup>|R->L|1|number|number|
-|`-`|단항 부정 연산자 <sup>Unary negation</sup>|R->L|1|number|number|
-|`++`|전치 또는 후치 증가 <sup>Increment</sup>|R->L|1|좌변 값(lval)|number|
-|`--`|전치 또는 후치 감소 <sup>Decrement</sup>|R->L|1|좌변 값(lval)|number|
+|`+`|숫자화 연산자|R->L|1|number|number|
+|`-`|단항 부정 연산자|R->L|1|number|number|
+|`++`|전치 또는 후치 증가|R->L|1|좌변 값(lval)|number|
+|`--`|전치 또는 후치 감소|R->L|1|좌변 값(lval)|number|
 
-### 2.1 단항 덧셈 연산자 (+)
+### 2.1 단항 덧셈 연산자 (+) <sup>Unary plus</sup>
 
 단항 덧셈 연산자는 피연산자를 숫자(또는 NaN)로 바꾼 후 값을 반환한다.  
 만일 피연산자가 숫자인 경우에는 아무 일도 하지 않는다.
@@ -136,7 +136,7 @@ NaN % 2 // NaN
 +null  // 0
 ```
 
-### 2.2 단항 뺄셈 연산자 (-)
+### 2.2 단항 뺄셈 연산자 (-) <sup>Unary negation</sup>
 
 단항 부정 연산자는 그것의 피연산자보다 앞에 위치하여 음수로 만든다.
 
@@ -145,7 +145,7 @@ var x = 3;
 y = -x; // y = -3, x = 3
 ```
 
-### 2.3 증가 연산자 (++)
+### 2.3 증가 연산자 (++) <sup>Increment</sup>
 
 `++`연산자는 단항 피연산자에 대해 증가 연산을 한다. (즉, 1을 더한다.)  
 이때 피연산자는 반드시 좌변 값(변수, 배열 원소 또는 객체 프로퍼티 중 하나)이어야 한다.  
@@ -175,7 +175,7 @@ x = "1";
 y = ++x; // y = 2
 ```
 
-### 2.4 감소 연산자 (--)
+### 2.4 감소 연산자 (--) <sup>Decrement</sup>
 
 * `--x` : 먼저 피연산자의 값을 1 감소시킨 후에 해당 연산을 수행한다. (피연산자에 1을 뺀 값을 반환)
 * `x--` : 먼저 해당 연산을 수행하고 나서, 피연산자의 값을 1 감소시킨다. (피연산자에 1을 빼기 전 값을 반환)
@@ -195,4 +195,4 @@ y = x--; // y = 3, x = 2
 ```js
 var x = 10;
 var y = x-- + 5 + --x;
-```````
+```
