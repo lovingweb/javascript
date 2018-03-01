@@ -1,5 +1,5 @@
-* Lexical Structure
-* Types, Values and Variables
+* 1. Lexical Structure
+* 2. Types, Values and Variables
 * [3. Expressions & Operators](/book/Expressions-Operators-Overview.md)
   * [3.1 Overview](/book/Expressions-Operators-Overview.md)
   * [3.2 Arithmetic Operators](/book/Arithmetic-Operators.md)
