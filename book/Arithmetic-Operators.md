@@ -1,4 +1,4 @@
-# Arithmetic Operators
+# Arithmetic operators
 
 <p class="sub-title">산술 연산자</p>
 

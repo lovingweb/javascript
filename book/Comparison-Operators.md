@@ -1,4 +1,4 @@
-# Comparison Operators
+# Comparison operators
 
 <p class="sub-title">비교 연산자</p>
 
