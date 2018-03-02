@@ -120,8 +120,10 @@ NaN % 2 // NaN
 |:---:|---|:---:|:---:|---|---|
 |`+`|숫자화 연산자|R->L|1|number|number|
 |`-`|단항 부정 연산자|R->L|1|number|number|
-|`++`|전치 또는 후치 증가|R->L|1|좌변 값(lval)|number|
-|`--`|전치 또는 후치 감소|R->L|1|좌변 값(lval)|number|
+|`x++`|후치 증가|없음|1|좌변 값(lval)|number|
+|`x--`|후치 감소|없음|1|좌변 값(lval)|number|
+|`++x`|전치 증가|R->L|1|좌변 값(lval)|number|
+|`--x`|전치 감소|R->L|1|좌변 값(lval)|number|
 
 ### 2.1 단항 덧셈 연산자 (+) <sup>Unary plus</sup>
 

@@ -40,7 +40,7 @@ Object(3)     // Number {3}
 ```
 
 몇몇 연산자는 암시적 타입 변환을 수행하므로 종종 타입 변환 목적으로 사용된다.  
-그래서 나온 것이 다음의 타입 변환 숙어들이다.
+그래서 나온 것이 다음과 같은 타입 변환 숙어들이다.
 ```js
 x + "" // Stirng(x)와 같다.
 +x     // Number(X)와 같다.
@@ -61,8 +61,8 @@ Number(null)      // 0
 Number("a")       // NaN
 ```
 
-`Number()`함수는 10진수 정수만 처리할 수 있고 그 뒤애 숫자 아닌 문자가 오는 것을 허용하지 않는다. 
-이 때는 `parseInt()`와 `parseFloat()`애 내장 함수를 사용하면 된다.
+`Number()`함수는 10진수 정수만 처리할 수 있고 그 뒤에 숫자 아닌 문자가 오는 것을 허용하지 않는다. 
+이 때는 `parseInt()`와 `parseFloat()` 내장 함수를 사용하면 된다.
 
 * `parseInt(string, radix)` : 문자열을 파싱하여 특정 진법의 정수를 반환한다.
 * `parseFloat(value)` : 문자열을 파싱하여 부동 소수점 수를 반환한다.
@@ -167,7 +167,7 @@ Number클래스는 소수점 이하 자릿수나 지수 표기법을 사용하�
 (123456.789).toPrecision(10)  // "123456.7890"
 ```
 
-자바스크립트의 타입 변환 숙어를 사용한다.
+문자열 결합 연산자(`+`)와 빈문자("")를 사용해서 간단하게 문자열로 변환할 수 있다.
 
 ```js
 var num = 2 // "number"
@@ -181,14 +181,15 @@ Boolean Data Type이 가장 요긴하게 사용되는 곳은 if문이다.
 다음은 기타 데이터 타입을 Boolean값으로 변환하는 규칙이다.
 
 * `null`과 `undefined` 값은 `false`가 된다.
-* 숫자 0과 `NaN`은 `false`가 된다.
+* 숫자 0(-0)과 `NaN`은 `false`가 된다.
 * 빈 문자열''은 `false`가 된다.
 * 그 외의 모든 값은 `true`가 된다.
 
-그러므로 다음 코드의 5가지를 제외한 경우 모두 'true'이다.
+그러므로 다음 코드의 6가지를 제외한 경우 모두 'true'이다.
 
 ```js
 Boolean(0)         // false
+Boolean(-0)        // false
 Boolean(NaN)       // false
 Boolean("")        // false
 Boolean(null)      // false
