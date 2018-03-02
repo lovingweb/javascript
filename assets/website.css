@@ -189,6 +189,9 @@ body,
     margin: 6rem 0 4rem;
     background: #94a9b3;
 }
+.markdown-section p.sub-title + blockquote {
+    margin-top: 3.5em;
+}
 .markdown-section code {
     padding: .2em .5em .2em .6em;
     margin: 0 .2em;
