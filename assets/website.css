@@ -324,8 +324,12 @@ body,
   font-size: 0.8em !important;
   line-height: 0;
   position: relative;
+  margin-right: 0.2em;
   vertical-align: baseline;
   font-weight: 400 !important;
+}
+.markdown-section h2 sup {
+    font-size: 0.65em !important;
 }
 .markdown-section sub {
   bottom: -0.2em;
