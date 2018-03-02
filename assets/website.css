@@ -86,7 +86,7 @@ body,
 .book-summary ul.summary li.active > a,
 .markdown-section code,
 .markdown-section a,
-.markdown-section blockquote storng {
+.markdown-section blockquote strong {
     color: #5a62d7;
 }
 ::-moz-selection,
@@ -300,7 +300,7 @@ body,
 .markdown-section blockquote p + p {
     margin-bottom: .85em;
 }
-.markdown-section blockquote storng::afrer {
+.markdown-section blockquote strong::afrer {
     display: none;
 }
 .markdown-section dl dt,
