@@ -233,6 +233,12 @@ body,
     content: 'javascript';
     background-color: #5a62d7;
 }
+.markdown-section pre + p,
+.markdown-section pre + ul,
+.markdown-section pre + ol,
+.markdown-section pre + dl {
+    margin-top: 2em;
+}
 .markdown-section table code {
     font-size: 1em;
     background-color: transparent;
@@ -276,6 +282,7 @@ body,
     font-weight: 400;
 }
 .markdown-section blockquote {
+    margin: 2em 0;
     padding: 2rem 2.5rem;
     border-left: 4px solid #5a62d7;
     background-color: #f2f3fa;
