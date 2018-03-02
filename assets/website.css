@@ -233,6 +233,10 @@ body,
     content: 'javascript';
     background-color: #5a62d7;
 }
+.markdown-section pre code.lang-html::before {
+    content: 'html';
+    background-color: #11a39a;
+}
 .markdown-section pre + p,
 .markdown-section pre + ul,
 .markdown-section pre + ol,
@@ -337,9 +341,41 @@ body,
 
 /* Code Highlight */
 .book .book-body .page-wrapper .page-inner section.normal pre .hljs-keyword, 
-.book .book-body .page-wrapper .page-inner section.normal code .hljs-keyword {
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-keyword,
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-tag,
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-tag {
     color: #c792ea;
 }
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-constant, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-constant,
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-built_in, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-built_in,
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-attr, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-attr {
+    color: #82B1FF;
+}
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-literal, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-literal {
+    color: #F77669;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-string, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-string {
+    color: #80CBAE;
+}
+.book .book-body .page-wrapper .page-inner section.normal pre .xml .hljs-cdata, 
+.book .book-body .page-wrapper .page-inner section.normal code .xml .hljs-cdata,
+.book .book-body .page-wrapper .page-inner section.normal pre .lang-html .hljs-string, 
+.book .book-body .page-wrapper .page-inner section.normal code.lang-html .hljs-string {
+    color: #C3E88D;
+}
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-comment, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-comment, 
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-title, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-title {
+    color: #90A4AE;
+}
+
 .book .book-body .page-wrapper .page-inner section.normal pre .javascript .hljs-function, 
 .book .book-body .page-wrapper .page-inner section.normal code .javascript .hljs-function {
 
@@ -356,25 +392,9 @@ body,
 .book .book-body .page-wrapper .page-inner section.normal code .hljs-pragma {
 
 }
-.book .book-body .page-wrapper .page-inner section.normal pre .hljs-built_in, 
-.book .book-body .page-wrapper .page-inner section.normal code .hljs-built_in {
-    color: #82B1FF;
-}
-.book .book-body .page-wrapper .page-inner section.normal pre .hljs-literal, 
-.book .book-body .page-wrapper .page-inner section.normal code .hljs-literal {
-    color: #F77669;
-}
 .book .book-body .page-wrapper .page-inner section.normal pre .hljs-params, 
 .book .book-body .page-wrapper .page-inner section.normal code .hljs-params {
 
-}
-.book .book-body .page-wrapper .page-inner section.normal pre .hljs-constant, 
-.book .book-body .page-wrapper .page-inner section.normal code .hljs-constant {
-    color: #82B1FF;
-}
-.book .book-body .page-wrapper .page-inner section.normal pre .hljs-string, 
-.book .book-body .page-wrapper .page-inner section.normal code .hljs-string {
-    color: #80CBAE;
 }
 .book .book-body .page-wrapper .page-inner section.normal pre .hljs-value, 
 .book .book-body .page-wrapper .page-inner section.normal code .hljs-value {
@@ -396,14 +416,30 @@ body,
 .book .book-body .page-wrapper .page-inner section.normal code .ruby .hljs-symbol {
 
 }
-.book .book-body .page-wrapper .page-inner section.normal pre .xml .hljs-cdata, 
-.book .book-body .page-wrapper .page-inner section.normal code .xml .hljs-cdata {
-    color: #C3E88D;
-}
-.book .book-body .page-wrapper .page-inner section.normal pre .hljs-comment, 
-.book .book-body .page-wrapper .page-inner section.normal code .hljs-comment, 
-.book .book-body .page-wrapper .page-inner section.normal pre .hljs-title, 
-.book .book-body .page-wrapper .page-inner section.normal code .hljs-title {
-    color: #90A4AE;
-}
 
+
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-regexp,
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-regexp,
+
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-variable, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-variable, 
+ 
+ 
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-deletion, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-deletion, 
+.book .book-body .page-wrapper .page-inner section.normal pre .ruby .hljs-constant, 
+.book .book-body .page-wrapper .page-inner section.normal code .ruby .hljs-constant, 
+.book .book-body .page-wrapper .page-inner section.normal pre .xml .hljs-tag .hljs-title, 
+.book .book-body .page-wrapper .page-inner section.normal code .xml .hljs-tag .hljs-title, 
+.book .book-body .page-wrapper .page-inner section.normal pre .xml .hljs-pi, 
+.book .book-body .page-wrapper .page-inner section.normal code .xml .hljs-pi, 
+.book .book-body .page-wrapper .page-inner section.normal pre .xml .hljs-doctype, 
+.book .book-body .page-wrapper .page-inner section.normal code .xml .hljs-doctype, 
+.book .book-body .page-wrapper .page-inner section.normal pre .html .hljs-doctype, 
+.book .book-body .page-wrapper .page-inner section.normal code .html .hljs-doctype, 
+.book .book-body .page-wrapper .page-inner section.normal pre .css .hljs-id, 
+.book .book-body .page-wrapper .page-inner section.normal code .css .hljs-id, 
+.book .book-body .page-wrapper .page-inner section.normal pre .css .hljs-class, 
+.book .book-body .page-wrapper .page-inner section.normal code .css .hljs-class, 
+.book .book-body .page-wrapper .page-inner section.normal pre .css .hljs-pseudo, 
+.book .book-body .page-wrapper .page-inner section.normal code .css .hljs-pseudo {}
