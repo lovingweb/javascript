@@ -300,7 +300,7 @@ body,
 .markdown-section blockquote p + p {
     margin-bottom: .85em;
 }
-.markdown-section blockquote strong::afrer {
+.markdown-section blockquote strong::after {
     display: none;
 }
 .markdown-section dl dt,
@@ -330,6 +330,9 @@ body,
 }
 .markdown-section h2 sup {
     font-size: 0.65em !important;
+}
+.markdown-section h3 sup {
+    font-size: 0.7em !important;
 }
 .markdown-section sub {
   bottom: -0.2em;

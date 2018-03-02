@@ -19,7 +19,7 @@
 |`^=`| 비트 XOR 할당|R->L|2|l-val, 타입 무방|타입 무방|
 |&#x007C;=| 비트 OR 할당|R->L|2|l-val, 타입 무방|타입 무방|
 
-## 1. 할당 연산자 <sup>Assignment</sup> (=)
+## 1. 할당 연산자 (=) <sup>Assignment</sup>
 
 단순 할당 연산자는 값을 변수에 할당한다. 할당 연산자는 할당되는 값을 평가한다.  
 한 개의 값을 여러 개의 변수에 할당하기 위해 할당 연산자를 연속으로 사용할 수 있다.
@@ -51,7 +51,7 @@ x = y = z // x, y, z 는 모두  25
 |&#x007C;=|a &#x007C;= b|a = a &#x007C; b|
 |`^=`|`a ^= b`|`a = a ^ b`|
 
-### 1.1 덧셈 할당 <sup>Addition assignment</sup> (+=)
+### 1.1 덧셈 할당 (+=) <sup>Addition assignment</sup>
 
 `+=`연산자는 오른쪽에 있는 피연산자의 값을 변수에 더하고, 그 결과를 변수에 할당한다.
 
@@ -81,7 +81,7 @@ foo += false // "foofalse"
 foo += "bar" // "foobar"
 ```
 
-### 1.2 뺄셈 할당 <sup>Subtraction assignment</sup> (-=)
+### 1.2 뺄셈 할당 (-=) <sup>Subtraction assignment</sup>
 
 `-=`연산자는 변수를 오른쪽 피연산자의 값을 뺀 뒤 그 결과를 변수에 할당한다.
 
@@ -93,7 +93,7 @@ bar -= 2     // 3
 bar -= "foo" // NaN
 ```
 
-### 1.3 곱셈 할당 <sup>Multiplication assignment</sup> (*=)
+### 1.3 곱셈 할당 (*=) <sup>Multiplication assignment</sup>
 
 `*=`연산자는 오른쪽 피연산자의 값으로 변수를 곱한 다음 그 결과를 변수에 할당한다.
 
@@ -105,9 +105,9 @@ bar *= 2     // 10
 bar *= "foo" // NaN
 ```
 
-### 1.4 나눗셈 할당 <sup>Division assignment</sup> (/=)
+### 1.4 나눗셈 할당 (/=) <sup>Division assignment</sup>
 
-`/=`연산자는 변수를 오른쪽 피연산자로 나눈 다음 그 결과를 변수에 할당한다. 
+`/=`연산자는 변수를 오른쪽 피연산자로 나눈 다음 그 결과를 변수에 할당한다.
 
 ```js
 // 다음과 같은 변수를 가정한다.
@@ -118,7 +118,7 @@ bar /= "foo" // NaN
 bar /= 0     // Infinity
 ```
 
-### 1.5 나머지 연산 할당 <sup>Remainder assignment</sup> (%=)
+### 1.5 나머지 연산 할당 (%=) <sup>Remainder assignment</sup>
 
 `%=`연산자는 변수를 오른쪽 피연산자로 나눈 다음 그 나머지를 변수에 할당한다.
 
@@ -131,19 +131,19 @@ bar %= "foo" // NaN
 bar %= 0     // NaN
 ```
 
-### 1.6 왼쪽 시프트 할당 <sup>Left shift assignment</sup> (<<=)
+### 1.6 왼쪽 시프트 할당 (<<=) <sup>Left shift assignment</sup>
 
 
-### 1.7 오른쪽 시프트 할당 <sup>Right shift assignment</sup> (>>=)
+### 1.7 오른쪽 시프트 할당 (>>=) <sup>Right shift assignment</sup>
 
 
-### 1.8 부호 없는 오른쪽 시프트 할당 <sup>Unsigned right shift assignment</sup> (>>>=)
+### 1.8 부호 없는 오른쪽 시프트 할당 (>>>=) <sup>Unsigned right shift assignment</sup>
 
 
-### 1.9 비트 AND 할당 <sup>Bitwise AND assignment</sup> (&=)
+### 1.9 비트 AND 할당 (&=) <sup>Bitwise AND assignment</sup>
 
 
-### 1.10 비트 XOR 할당 <sup>Bitwise XOR assignment</sup> (^=)
+### 1.10 비트 XOR 할당 (^=) <sup>Bitwise XOR assignment</sup>
 
 
-### 1.11 비트 OR 할당 <sup>Bitwise OR assignment</sup> (|=)
+### 1.11 비트 OR 할당 (|=) <sup>Bitwise OR assignment</sup>
