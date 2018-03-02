@@ -13,44 +13,11 @@
 * `-0`
 * `""` : 빈 문자열 <sup>emppty string</sup>
 
-<table>
-<thead>
-<tr>
-<th style="text-align:center">연산자</th>
-<th>수행되는 연산</th>
-<th style="text-align:center">결합방향</th>
-<th style="text-align:center">피연산자 개수</th>
-<th>피연산자 타입</th>
-<th>반환</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><code>&amp;&amp;</code></td>
-<td>논리 AND</td>
-<td style="text-align:center">L-&gt;R</td>
-<td style="text-align:center">2</td>
-<td>타입 무방, 타입 무방</td>
-<td>타입 무방</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>||</code></td>
-<td>논리 OR</td>
-<td style="text-align:center">L-&gt;R</td>
-<td style="text-align:center">2</td>
-<td>타입 무방, 타입 무방</td>
-<td>타입 무방</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>!</code></td>
-<td>논리 NOT</td>
-<td style="text-align:center">R-&gt;L</td>
-<td style="text-align:center">1</td>
-<td>Boolean</td>
-<td>Boolean</td>
-</tr>
-</tbody>
-</table>
+|연산자|수행되는 연산|결합방향|피연산자 개수|피연산자 타입|반환|
+|:---:|---|:---:|:---:|---|---|
+|`&&`|논리 AND|L->R|2|타입 무방, 타입 무방|타입 무방|
+|&#x007C;&#x007C;|논리 OR|L->R|2|타입 무방, 타입 무방|타입 무방|
+|`!`|논리 NOT|R->L|1|Boolean|Boolean|
 
 ## 1. 논리 AND (A && B)
 
