@@ -179,7 +179,6 @@ body,
 }
 .markdown-section h2::before,
 .markdown-section p.sub-title + p::before,
-.markdown-section p.sub-title + blockquote::before,
 .markdown-section p.sub-title + dl::before,
 .markdown-section p.sub-title + ul::before,
 .markdown-section p.sub-title + ol::before {

@@ -9,9 +9,9 @@
 
 연산자에 필요한 피연산자의 개수에 따라 연산자들을 분류할 수 있다.
 
-* 단항 연산자(unary operator) : 연산자 피연산자 또는 피연산자 연산자 (A+B, A==B, A||B)
-* 이항 연산자(binary operator) : 피연산자1 연산자 피연산자2 (A=B, -A, typeof A)
-* 삼항 연산자(ternary operator) : 조건부 연산자 하나가 존재한다. A?B:C
+* 단항 연산자(unary operator) : 연산자 피연산자 또는 피연산자 연산자 (`A+B`, `A==B`, `A||B`)
+* 이항 연산자(binary operator) : 피연산자1 연산자 피연산자2 (`A=B`, `-A`, `typeof A`)
+* 삼항 연산자(ternary operator) : 조건부 연산자 하나가 존재한다. (`A?B:C`)
 
 ## 2. 피연산자와 변환 타입
 
