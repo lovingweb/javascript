@@ -127,6 +127,11 @@ body,
     font-size: 27px;
     font-weight: 400;
 }
+.book-summary ul.summary a.custom-link:hover,
+.book-summary ul.summary a.custom-link:focus,
+.book-summary ul.summary a.custom-link:active {
+    text-decoration: none;
+}
 .book-summary ul.summary .custom-link::before {
     content: 'LW';
     display: inline-block;
