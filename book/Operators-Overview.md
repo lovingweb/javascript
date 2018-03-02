@@ -2,8 +2,8 @@
 
 <p class="sub-title">연산자 개요</p>
 
-연산자 <sup>Opearate</sup>는 하나 혹은 그 이상의 값을 하나의 값으로 만들 때 사용한다.
-연산자는 식<sup>Expressions</sup>의 일부로 항상 하나의 값<sup>Value</sup>으로 귀결된다.
+> 연산자 <sup>Opearate</sup>는 하나 혹은 그 이상의 값을 하나의 값으로 만들 때 사용한다.
+> 연산자는 식<sup>Expressions</sup>의 일부로 항상 하나의 값<sup>Value</sup>으로 귀결된다.
 
 ## 1. 피연산자의 개수
 
