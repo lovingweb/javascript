@@ -303,6 +303,9 @@ body,
 .markdown-section table.sm-table {
     font-size: .85em;
 }
+.markdown-section table.merge-cell td:first-child {
+    background-color: #fff;
+}
 .markdown-section blockquote {
     margin: 2em 0;
     padding: 2rem 2.5rem;

@@ -2,7 +2,7 @@
 
 <p class="sub-title">연산자 우선순위 표</p>
 
-<table class="sm-table">
+<table class="sm-table merge-cell">
     <colgroup>
         <col style="width: 8%;">
         <col style="width: 10%;">
