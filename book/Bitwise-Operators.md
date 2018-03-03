@@ -5,7 +5,7 @@
 |연산자|수행되는 연산|결합방향|피연산자 개수|피연산자 타입|반환|
 |:---:|---|:---:|:---:|---|---|
 |`&`|비트 단위 AND <sup>Bitwise AND</sup>|`L->R`|2|정수|정수|
-|&#x007C;|비트 단위 OR <sup>Bitwise OR</sup>|`L->R`|2|정수|정수|
+|&#x007C;|비트 단위 OR <sup>Bitwise OR</sup>|`L->R`|2|Number, Number|Number|
 |`^`|비트 단위 XOR <sup>Bitwise XOR</sup>|`L->R`|2|정수|정수|
 |`~`|비트 단위 NOT <sup>Bitwise NOT</sup>|`R->L`|1|정수|정수|
 |`<<`|왼쪽으로 이동<sup>Left shift</sup>|`L->R`|2|정수|정수|

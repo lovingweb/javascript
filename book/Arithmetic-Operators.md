@@ -10,12 +10,12 @@
 
 |연산자|수행되는 연산|결합방향|피연산자 개수|피연산자 타입|반환|
 |:---:|---|:---:|:---:|---|---|
-|`+`|덧셈|L->R|2|number, number|number|
-|`+`|결합|L->R|2|string, string|string|
-|`-`|뺄셈|L->R|2|number, number|number|
-|`*`|곱셈|L->R|2|number, number|number|
-|`/`|나눗셈|L->R|2|number, number|number|
-|`%`|나머지|L->R|2|number, number|number|
+|`+`|덧셈|`L->R`|2|number, number|number|
+|`+`|결합|`L->R`|2|string, string|string|
+|`-`|뺄셈|`L->R`|2|number, number|number|
+|`*`|곱셈|`L->R`|2|number, number|number|
+|`/`|나눗셈|`L->R`|2|number, number|number|
+|`%`|나머지|`L->R`|2|number, number|number|
 
 ### 1.1 덧셈 연산자 (+) <sup>Addition / Concatenation</sup>
 
@@ -118,12 +118,12 @@ NaN % 2 // NaN
 
 |연산자|수행되는 연산|결합방향|피연산자 개수|피연산자 타입|반환|
 |:---:|---|:---:|:---:|---|---|
-|`+`|숫자화 연산자|R->L|1|number|number|
-|`-`|단항 부정 연산자|R->L|1|number|number|
+|`+`|숫자화 연산자|`R->L`|1|number|number|
+|`-`|단항 부정 연산자|`R->L`|1|number|number|
 |`x++`|후치 증가|없음|1|좌변 값(lval)|number|
 |`x--`|후치 감소|없음|1|좌변 값(lval)|number|
-|`++x`|전치 증가|R->L|1|좌변 값(lval)|number|
-|`--x`|전치 감소|R->L|1|좌변 값(lval)|number|
+|`++x`|전치 증가|`R->L`|1|좌변 값(lval)|number|
+|`--x`|전치 감소|`R->L`|1|좌변 값(lval)|number|
 
 ### 2.1 단항 덧셈 연산자 (+) <sup>Unary plus</sup>
 
