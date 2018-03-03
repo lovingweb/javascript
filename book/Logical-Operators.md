@@ -82,6 +82,7 @@ var max = max_width || preferences.max_width || 500;
 2. 이 외의 경우 `preference`객체에 속한 값을 찾아본다.
 3. 그것조차 정의되어 있지 않을 경우 하드 코딩된 상수를 사용한다. 
 
+> **단축 평가**
 > * false && (anything) : false 단락으로 평가된다.
 > * true || (anything) : true 단락으로 평가된다.
 
