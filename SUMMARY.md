@@ -13,3 +13,12 @@
   * [3.7 Bitwise operators](/book/Bitwise-Operators.md)
   * [3.8 Miscellaneous operators](/book/Miscellaneous-Operators.md)
   * [3.9 Operator precedence table](/book/Operator-Precedence-Table.md)
+* [4. Statements](/book/Statements.md)
+  * [4.1 Expression statements](/book/Expression-Statements.md)
+  * [4.2 Compound and Empty Statements](/book/Compound-and-Empty-Statements.md)
+  * [4.3 Declaration statements](/book/Declaration-Statements.md)
+  * [4.4 Conditionals](/book/Conditionals.md)
+  * [4.5 Loops](/book/Loops.md)
+  * [4.6 Jumps](/book/Jumps.md)
+  * [4.7 Miscellaneus statements](/book/Miscellaneus-Statements.md)
+
