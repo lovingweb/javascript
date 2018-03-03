@@ -4,13 +4,13 @@
 
 <table>
     <colgroup>
+        <col style="width: 8%;">
+        <col style="width: 10%;">
         <col style="width: auto;">
-        <col style="width: auto;">
-        <col style="width: auto;">
-        <col style="width: auto;">
-        <col style="width: auto;">
-        <col style="width: auto;">
-        <col style="width: auto;">
+        <col style="width: 12%;">
+        <col style="width: 8%;">
+        <col style="width: 15%;">
+        <col style="width: 10%;">
     </colgroup>
     <thead>
         <tr>
