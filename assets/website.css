@@ -189,7 +189,8 @@ body,
     margin: 6rem 0 4rem;
     background: #94a9b3;
 }
-.markdown-section p.sub-title + blockquote {
+.markdown-section p.sub-title + blockquote,
+.markdown-section p.sub-title + table {
     margin-top: 3.5em;
 }
 .markdown-section code {
