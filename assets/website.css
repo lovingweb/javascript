@@ -373,6 +373,10 @@ body,
     border: 0;
 }
 
+.embed-nav ul li:first-child a {
+    color: #f00;
+}
+
 /* Code Highlight */
 .book .book-body .page-wrapper .page-inner section.normal pre .hljs-keyword, 
 .book .book-body .page-wrapper .page-inner section.normal code .hljs-keyword,
