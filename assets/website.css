@@ -203,7 +203,7 @@ body,
 }
 .markdown-section code {
     display: inline-block;
-    padding: 0 .2em;
+    padding: 0 .3em;
     margin: 0;
     background-color: transparent;
     font-family: "Fira Code", "Noto Sans KR", "Malgun Gothic", monospace;
@@ -211,7 +211,6 @@ body,
 
 }
 .markdown-section strong code {
-    padding: 0 .4em 0 .5em;
     background-color: #f2f3fa;
 }
 @media 
