@@ -194,7 +194,8 @@ body,
     margin-top: 3.5em;
 }
 .markdown-section code {
-    padding: .2em .5em .2em .6em;
+    display: inline-block;
+    padding: 0 .4em 0 .5em;
     margin: 0 .2em;
     background-color: #f2f3fa;
     font-family: "Fira Code", "Noto Sans KR", "Malgun Gothic", monospace;

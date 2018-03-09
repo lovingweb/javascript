@@ -9,7 +9,7 @@
 * if : 기본적인 조건문
 * switch : 정교한 방향으로 구문을 분기하는 조건문
 
-## 1. if, else
+## 1. if / else
 
 <pre class="syntax">
 if(condition)
