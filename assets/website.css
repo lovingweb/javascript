@@ -84,7 +84,7 @@ body,
 }
 .book-summary ul.summary .custom-link,
 .book-summary ul.summary li.active > a,
-.markdown-section code,
+/*.markdown-section code,*/
 .markdown-section a,
 .markdown-section blockquote strong {
     color: #5a62d7;
