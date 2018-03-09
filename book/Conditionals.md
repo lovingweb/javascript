@@ -66,6 +66,9 @@ b = a? a : c
 b = a || c
 ```
 
+<p data-height="200" data-theme-id="32424" data-slug-hash="mxyONK" data-default-tab="js,result" data-user="aroree" data-embed-version="2" data-pen-title="mxyONK" class="codepen">See the Pen <a href="https://codepen.io/aroree/pen/mxyONK/">mxyONK</a> by aroree (<a href="https://codepen.io/aroree">@aroree</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 `else`절은 기본적으로 가장 가까운 `if`문에 속하므로 잘못된 들여쓰기로 인한 오류에 주의해야 한다. (이를 방지하려면 중괄호를 사용하도록 하자)
 
 ```js
