@@ -10,9 +10,9 @@
 자바스크립트는 strict 비교나, abstract(type-converting) 비교가 가능하다.
 
 <dl>
-    <dt><strong>strict 비교</strong></dt>
+    <dt><u>strict 비교</u></dt>
     <dd>만약 두 피연자가 같은 타입이 아니라면, 자라바스크립트가 두 피연산자를 비교하기에 적당한 타입으로 바꾼다. 만약 두 피연자가 객체라면, 자바스크립트가 내부 내용을 비교하여 두 피연자가 메모리의 같은 객체를 가리킨다면 두 객체를 같다고 한다.</dd>
-    <dt><strong>abstract(type-converting) 비교</strong></dt>
+    <dt><u>abstract(type-converting) 비교</u></dt>
     <dd>같음을 정의하는 매우 엄격하게 정의하여, 타입 변환없이 두 피연산자가 '일치(identical)'하는지 확인한다.</dd>
 </dl>
 
@@ -130,7 +130,9 @@ null == undefined     // false
 |:---:|---|:---:|:---:|---|---|
 |`in`|프로퍼티가 존재하는지 확인|`L->R`|2|String, Object|Boolean|
 
-> prop in object
+<pre class="syntax">
+prop in object
+</pre>
 
 * prop : 속성의 이름이나 배열의 인덱스를 뜻하는 문자열 또는 수 값이다.
 * object : 객체의 이름
@@ -157,7 +159,9 @@ var data = [7, 8, 9] // 배열 정의 및 초기화
 |:---:|---|:---:|:---:|---|---|
 |`instanceof`|객체 타입 확인|`L->R`|2|Object, 생성자|Boolean|
 
-> object instanceof constructor
+<pre class="syntax">
+object instanceof constructor
+</pre>
 
 * object : 테스트 대상인 오브젝트
 * constructor : 테스트할 함수

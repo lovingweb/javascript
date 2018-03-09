@@ -332,6 +332,19 @@ body,
 .markdown-section blockquote strong::after {
     display: none;
 }
+.markdown-section blockquote em {
+    display: inline-block;
+    position: relative;
+    top: -2.1rem;
+    left: -2.6rem;
+    background: #5a62d7;
+    margin-bottom: -12px;
+    padding: .2em 1em;
+    font-size: 0.925em;
+}
+.markdown-section blockquote em strong {
+    color: #fff;
+}
 .markdown-section dl dt,
 .markdown-section dl dd {
     margin: 0;

@@ -10,7 +10,9 @@
 |:---:|---|:---:|:---:|---|---|
 |`?:`|조건부 연산자|`R->L`|3|Boolean, 타입 무방, 타입 무방|타입 무방|
 
-> `condition ? expr1 : expr2`
+<pre class="syntax">
+condition ? expr1 : expr2
+</pre>
 
 첫 번째 피연산자는 'true' 혹은 'false'로 평가되는 표현식을 사용할 수 있다.  
 이 값이 'true'로 평가되면 두 번째 피연산자가 평가되고 그 값을 반환하고, 'false'로 평가되면 세 번째 파연산자가 평가되고 그 값을 반환한다.  
@@ -76,7 +78,9 @@ console.log( access ); // logs "Access granted"
 |:---:|---|:---:|:---:|---|---|
 |`typeof`|피연산자의 타입을 반환|`R->L`|1|타입 무방|String|
 
-> typeof 피연산자
+<pre class="syntax">
+typeof 피연산자
+</pre>
 
 |x (type)| typeof x|
 |---|---|
@@ -161,7 +165,9 @@ typeof Math.sin === 'function';
 |:---:|---|:---:|:---:|---|---|
 |`delete`|프로퍼티를 제거|`R->L`|1|좌변 값(lval)|Boolean|
 
-> delete 피연산자
+<pre class="syntax">
+delete 피연산자
+</pre>
 
 * 존재하지 않는 속성을 삭제하려고 하면 `delete`연산자는 어떠한 작업도 없이 'true'를 반환한다.
 * 배열의 원소를 삭제하면 배열에 '빈 자리'가 생기고, 배열의 길이 자체는 달라지지 않는다.
@@ -210,7 +216,9 @@ y // 1
 |:---:|---|:---:|:---:|---|---|
 |`void`|undefined 값을 반환|`R->L`|1|타입 무방|undefined|
 
-> void 피연산자
+<pre class="syntax">
+void 피연산자
+</pre>
 
 표현식을 평가해야 하긴 하지만 반환 값이 'undefined'여야 하는 상황이 있다면 `void`연산자를 사용할 수 있겠지만, 실무에서 거의 사용되지 않는다.
 
@@ -229,7 +237,9 @@ y // 1
 |:---:|---|:---:|:---:|---|---|
 |`,`|첫 번째 피연산자를 무시하고 두 번째 피연산자를 반환|`L->R`|2|타입 무방|타입 무방|
 
-> expr1, expr2, expr3...
+<pre class="syntax">
+expr1, expr2, expr3...
+</pre>
 
 이 연산자는 왼쪽의 전달인자를 평가하고 오른쪽의 전달인자를 평가한 후, 오른쪽 전달인자의 값을 반환한다.
 
