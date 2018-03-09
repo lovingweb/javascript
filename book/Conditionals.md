@@ -32,7 +32,7 @@ if(!username)
 	username = "John Doe"
 ```
 
-다음과 같이 논리 연산자를 이용한 코드로 바꿀 수는 있지만 **`username`**이 '참'일 때도 평가해야므로 위의 `if`문 보다는 덜 효율적이다.
+다음과 같이 논리 연산자를 이용한 코드로 바꿀 수는 있지만 `username`이 '참'일 때도 평가해야므로 위의 `if`문 보다는 덜 효율적이다.
 
 ```js
 username = username || "John Doe"
