@@ -47,8 +47,7 @@ else
     statement2
 </pre>
 
-<!-- Codepen -->
-<p data-height="300" data-theme-id="32424" data-slug-hash="aYzZLV" data-default-tab="js,result" data-user="aroree" data-embed-version="2" data-pen-title="javascript : 홀수/짝수 판별" class="codepen">See the Pen <a href="https://codepen.io/aroree/pen/aYzZLV/">javascript : 홀수/짝수 판별</a> by aroree (<a href="https://codepen.io/aroree">@aroree</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="220" data-theme-id="32424" data-slug-hash="aYzZLV" data-default-tab="js,result" data-user="aroree" data-embed-version="2" data-pen-title="javascript : 홀수/짝수 판별" class="codepen">See the Pen <a href="https://codepen.io/aroree/pen/aYzZLV/">javascript : 홀수/짝수 판별</a> by aroree (<a href="https://codepen.io/aroree">@aroree</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ```js
