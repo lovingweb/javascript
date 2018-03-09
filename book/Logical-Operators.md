@@ -100,7 +100,7 @@ var max = max_width || preferences.max_width || 500;
 
 이렇게 논리 연산자의 좌변의 식을 평가해서 그 결과 값에 따라 우변의 표현식을 평가하지 않는 것을 단축 평가 <sup>Short-Circuit evaluation</sup>라고 부른다.
 
-> **단축 평가**
+> _**단축 평가**_
 > * false && (anything) : false 단락으로 평가된다.
 > * true || (anything) : true 단락으로 평가된다.
 
