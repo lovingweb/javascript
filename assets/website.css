@@ -332,6 +332,9 @@ body,
 .markdown-section blockquote strong::after {
     display: none;
 }
+.markdown-section blockquote code {
+    background-color: #e3e5f1;
+}
 .markdown-section blockquote em {
     display: inline-block;
     position: relative;
