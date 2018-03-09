@@ -84,7 +84,7 @@ body,
 }
 .book-summary ul.summary .custom-link,
 .book-summary ul.summary li.active > a,
-/*.markdown-section code,*/
+.markdown-section strong code,
 .markdown-section a,
 .markdown-section blockquote strong {
     color: #5a62d7;
@@ -194,18 +194,18 @@ body,
     margin-top: 3.5em;
 }
 .markdown-section code {
+    display: inline-block;
     padding: 0;
     margin: 0 .1em;
     background-color: transparent;
     font-family: "Fira Code", "Noto Sans KR", "Malgun Gothic", monospace;
     font-weight: 300;
-    /*display: inline-block;
+
+}
+.markdown-section strong code {
     padding: 0 .4em 0 .5em;
     margin: 0 .2em;
     background-color: #f2f3fa;
-    font-family: "Fira Code", "Noto Sans KR", "Malgun Gothic", monospace;
-    font-weight: 300;
-    font-size: 0.833333em;*/
 }
 @media 
 (-webkit-min-device-pixel-ratio: 2), 

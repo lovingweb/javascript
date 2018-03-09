@@ -9,7 +9,7 @@
 * if : 기본적인 조건문
 * switch : 정교한 방향으로 구문을 분기하는 조건문
 
-## 1. if / else
+## 1. if else
 
 <pre class="syntax">
 if(condition)
@@ -102,7 +102,7 @@ else
     statementN
 </pre>
 
-사실 `if/else`문과 들여쓰기의 차이일 뿐 자바스크립트에서 `else if`키워드는 존재하지 않는다.
+사실 `if else`문과 들여쓰기의 차이일 뿐 자바스크립트에서 `else if`키워드는 존재하지 않는다.
 
 <pre class="syntax">
 if(condition1)
@@ -112,7 +112,8 @@ else
         statement2
     else
         if(condition3)
-        statement3
+            statement3
+        else    
 ...
 </pre>
 
