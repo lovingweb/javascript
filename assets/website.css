@@ -194,13 +194,18 @@ body,
     margin-top: 3.5em;
 }
 .markdown-section code {
-    display: inline-block;
+    padding: 0;
+    margin: 0 .1em;
+    background-color: transparent;
+    font-family: "Fira Code", "Noto Sans KR", "Malgun Gothic", monospace;
+    font-weight: 300;
+    /*display: inline-block;
     padding: 0 .4em 0 .5em;
     margin: 0 .2em;
     background-color: #f2f3fa;
     font-family: "Fira Code", "Noto Sans KR", "Malgun Gothic", monospace;
     font-weight: 300;
-    font-size: 0.833333em;
+    font-size: 0.833333em;*/
 }
 @media 
 (-webkit-min-device-pixel-ratio: 2), 
@@ -334,7 +339,7 @@ body,
     display: none;
 }
 .markdown-section blockquote code {
-    background-color: #e3e5f1;
+    /*background-color: #e3e5f1;*/
 }
 .markdown-section blockquote em {
     display: inline-block;
