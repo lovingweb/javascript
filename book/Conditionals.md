@@ -50,16 +50,45 @@ else
 <p data-height="220" data-theme-id="32424" data-slug-hash="aYzZLV" data-default-tab="js,result" data-user="aroree" data-embed-version="2" data-pen-title="javascript : 홀수/짝수 판별" class="codepen">See the Pen <a href="https://codepen.io/aroree/pen/aYzZLV/">javascript : 홀수/짝수 판별</a> by aroree (<a href="https://codepen.io/aroree">@aroree</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
+> `if`문은 식의 결과 값에 따라 실행을 안하는 경우도 있지만(선택적 <sup>Optional</sup>이지만) `if else`는 문 중에 하나는 무조건적 <sup>Mandatory</sup>으로 실행이 되기 때문에 각각 그 의도에 맞게 사용해야 한다. 
+
+간단한 `if else`문은 다음과 같이 삼항 조건 연산자 또는 논리합 연산자를 사용해서 코드의 중복을 줄일 수도 있다. 
+
 ```js
+// if문
 if(a) b = a
 else b = c
 
+// 삼항 조건 연산자
 b = a? a : c
 
+// 논리합 연산자
 b = a || c
 ```
 
+`else`절은 기본적으로 가장 가까운 `if`문에 속하므로 잘못된 들여쓰기로 인한 오류에 주의해야 한다. (이를 방지하려면 중괄호를 사용하도록 하자)
 
+```js
+i = j = 1;
+k = 2;
+
+if(i == j)
+  if(j == k)
+    console.log("i와 k는 같다");
+else
+  console.log("i와 j는 같지 않다"); // i와 j는 같다!
+
+// {}를 사용해서 혼란을 없애도록 한다.
+if(i == j) {
+  if(j == k)
+    console.log("i와 k는 같다");
+}
+else {
+  console.log("i와 j는 같지 않다"); // i와 j는 같다!
+}
+```
+
+여러 조건(상태)을 분기할 때는 `else if`문을 사용할 수 있다.
 
 <pre class="syntax">
 if(condition1)
@@ -72,6 +101,22 @@ else if(condition3)
 else
     statementN
 </pre>
+
+사실 `if/else`문과 들여쓰기의 차이일 뿐 자바스크립트에서 `else if`키워드는 존재하지 않는다.
+
+<pre class="syntax">
+if(condition1)
+    statement1
+else
+    if(condition2)
+        statement2
+    else
+        if(condition3)
+        statement3
+...
+</pre>
+
+
 
 > if(식) 문1 else 문2
 > 식이 '거짓'이 아니라면 문1을 실행하고, '거짓'이라면 문2를 실행한다. 
