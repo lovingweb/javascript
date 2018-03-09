@@ -11,6 +11,8 @@
 
 ## 1. if else
 
+`if`문은 프로그램이 실행되는 흐름에 분기 <sup>branch</sup>를 일으키고, `else if`를 사용하여 다중 분기를 수행할 수도 있다.
+
 <pre class="syntax">
 if(condition)
     statement
@@ -76,18 +78,18 @@ i = j = 1;
 k = 2;
 
 if(i == j)
-  if(j == k)
-    console.log("i와 k는 같다");
+    if(j == k)
+        console.log("i와 k는 같다");
 else
-  console.log("i와 j는 같지 않다"); // i와 j는 같다!
+    console.log("i와 j는 같지 않다"); // i와 j는 같다!
 
 // {}를 사용해서 혼란을 없애도록 한다.
 if(i == j) {
-  if(j == k)
-    console.log("i와 k는 같다");
+    if(j == k)
+        console.log("i와 k는 같다");
 }
 else {
-  console.log("i와 j는 같지 않다"); // i와 j는 같다!
+    console.log("i와 j는 같지 않다"); // i와 j는 같다!
 }
 ```
 
@@ -120,21 +122,83 @@ else
 ...
 </pre>
 
+```js
+function number(n) {
+    if(n === 0)
+        return "0"
+    else if(n > 0)
+        return "양수"
+    else
+        return "음수"
+}
 
-
-> if(식) 문1 else 문2
-> 식이 '거짓'이 아니라면 문1을 실행하고, '거짓'이라면 문2를 실행한다. 
-
-
-
-
-
-
+console.log(number(-1));
+console.log(number(0));
+console.log(number(1));
+```
 
 ## 2. switch
 
+`switch`문은 `if`문에서 모든 분기가 동일한 표현식의 값에 의해 결정될 때 사용하면 좋다.  
+ 여러 `if`문에서 동일한 표현식을 반복해서 평가하는 문제점을 해결할 수 있기 때문이다.
 
-label 
+<pre class="syntax">
+switch(expression) {
+    case value1:
+        statement for value1
+        [break;]
+    case value1:
+        statement for value2
+        [break;]
+    ...    
+    case valueN:
+        statement for valueN
+        [break;]
+    default:
+        statement for none value
+        [break;]            
+}
+</pre>
 
+`expression`은 `case`레이블에서 나타날 것으로 예상되는 값을 반환하는 표현식이며 `case`와 `:` 사이에 있는 값을 기대값 <sup>Expected Value</sup>(반환할 예상 값)이라고 한다.
 
-https://programmers.co.kr/learn/challenge_codes/122/solutions
+`switch`문은 먼저 표현식의 값을 확인하고, 이 값과 일치(`===`연산자 사용)하는 **`case`**레이블을 찾는다. 이 값에 대응하는 레이블을 찾으면 해당 레이블 다음에 나오는 코드 블록의 구문들을 `break`문을 만날때까지 순서대로 실행하기 시작한다. **`break`**문은 코드 실행을 중지하고 `switch`문이나 루프의 끝으로 건너뛰는 역할을 한다.  
+표현식의 값과 대응하는 `case`레이블을 찾지 못한 경우에는 **`default`**레이블을 찾는다. 만일 이 레이블도 없으면 모든 코드 블록을 건너뛴다.
+
+```js
+// getDay() 메소드는 요일을 0(일)에서 6(토)사이의 숫자로 반환한다.
+var getDay = new Date().getDay();
+var day;
+
+switch(getDay) {
+    case 0: day = "일요일"; break;
+    case 1: day = "월요일"; break;
+    case 2: day = "화요일"; break;
+    case 3: day = "수요일"; break;
+    case 4: day = "목요일"; break;
+    case 5: day = "금요일"; break;
+    case 6: day = "토요일"; break;
+}
+
+document.write("오늘은 " + day + "입니다.")
+```
+
+```js
+var getDay = new Date().getDay();
+var weekend;
+
+switch(getDay) {
+    case 0: case 6:
+        weekend = "주말입니다."
+        break;
+    default:
+        weekend = "주말이 아닙니다."
+}
+
+document.write("오늘은 " + weekend)
+```
+
+* `switch`문은 중괄호{}를 꼭 써야 한다.
+* `switch`문 안에 적어도 1개의 `case` 또는 `default`레이블을 사용해야 한다.
+* `default`레이블은 `switch`문 안에 어디서든 사용해도 되지만 가장 마지막이 적합하며, 생략하거나 1번만 사용할 수 있다.
+* `case` 레이블의 연속 실행을 의도하는 것이 아니라면 `case` 끝마다 `break`문을 넣는다.
