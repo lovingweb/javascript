@@ -10,7 +10,7 @@
 > statement  
 > 식이 '거짓'이 아니라면 문을 실행한다.
 
-<pre>
+<pre class="syntax">
 if(condition)
     statement
 </pre>

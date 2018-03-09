@@ -220,6 +220,12 @@ body,
     padding: 2.5rem 3.5rem;
     background-color: #263238;
 }
+.markdown-section pre.syntax {
+    border-left: 4px solid #5a62d7;
+    background-color: #f2f3fa;
+    color: #5a62d7;
+    font-family: "Fira Code", "Noto Sans KR", "Malgun Gothic", monospace;
+}
 .markdown-section pre code {
     display: block;
     margin: 0;
@@ -309,7 +315,7 @@ body,
 .markdown-section blockquote {
     margin: 2em 0;
     padding: 2rem 2.5rem;
-    border-left: 4px solid #5a62d7;
+    border: 1px dashed #a6abe8;
     background-color: #f2f3fa;
 }
 .markdown-section blockquote p {
