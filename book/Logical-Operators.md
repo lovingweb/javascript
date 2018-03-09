@@ -25,21 +25,26 @@
 적어도 하나 이상의 피연산자가 `false`라면 연산 결과로 `false`를 반환한다.
 
 ```js
-true && true // true
-true && false // false
-false && true // false
-false && 4 // false
-true && 4 // 4
-null && 3 // null
-undefined && 3 // undefined
-false && (3 == 4) // false
-"Cat" && "Dog" // "Dog"
-false && "Cat" // false
-"Cat" && false // false
+true && true   // true
+true && false  // false
+false && true  // false
+false && false // false
 ```
 
 `&&` 연산자는 좌변에 있는 첫 번째 파연산자의 표현식을 먼저 평가하기 때문에 좌변의 값이 'falsy'이면 우변의 표현식은 평가하지 않는다.  
-이를 단축 평가 <sup>Short-Circuit evaluation</sup>라고 부른다.
+
+```js
+false && 4        // false
+true && 4         // 4
+null && 3         // null
+undefined && 3    // undefined
+false && (3 == 4) // false
+"Cat" && "Dog"    // "Dog"
+false && "Cat"    // false
+"Cat" && false    // false
+```
+
+다음은 이 같은 특성을 일부러 사용하는 코드의 예제이다.
 
 ```js
 var  o = {x : 3}
@@ -47,8 +52,6 @@ var p = null
 o && o.x // 3 : o가 객체이기 때문에 o.x를 반환한다.
 p && p.x // null : p가 null이기 때문에 p.x를 평가하지 않고 null을 반환한다.
 ```
-
-다음은 이 같은 특성을 일부러 사용하는 코드의 예제이다.
 
 ```js
 if (a == b) stop(); // a == b 를 만족할 때만 stop() 함수를 호출한다.
@@ -61,18 +64,30 @@ if (a == b) stop(); // a == b 를 만족할 때만 stop() 함수를 호출한다
 적어도 하나 이상의 피연산자가 `true`라면 연산 결과로 `true`를 반환한다.
 
 ```js
-true || true // true
-true || false // true
+true || true   // true
+true || false  // true
 false || false // false
-false || true // true
-false || 3 // 3
-false || (3 == 4) // false
-"Cat" || "Dog" // "Cat"
-"Cat" || false // "Cat"
+false || true  // true
 ```
 
-`||`연산자는 좌변의 값이 `true`로 평가되는 값이면, 전체 표현식의 값은 바로 그 값이 된다.  
+`||`연산자는 좌변의 값이 `true`로 평가되는 값이면, (우변의 표현식을 평가하지 않고) 전체 표현식의 값은 바로 그 값이 된다.  
 좌변의 값이 `false`로 평가되는 값이면, 연산자의 두 번째 피연산자를 평가하고, 이 값이 표현식의 값으로 반환된다.
+
+```js
+"" || 3           // 3
+3 || false        // 3
+5 || 3            // 5
+0 || 5            // 5
+0 || "a"          // "a"
+true || "a"       // true
+0 || ""           // ""
+0 || false        // false
+false || (3 == 4) // false
+"Cat" || "Dog"    // "Cat"
+"Cat" || false    // "Cat"
+```
+
+이 연산자는 일반적으로, 다음 코드와 같이 여러 값 중에 최초로 true로 평가되는 값을 선택하는 경우에 사용된다.
 
 ```js
 var max = max_width || preferences.max_width || 500;
@@ -81,6 +96,9 @@ var max = max_width || preferences.max_width || 500;
 1. `max_width`가 정의되어 있으면 이것을 사용한다.
 2. 이 외의 경우 `preference`객체에 속한 값을 찾아본다.
 3. 그것조차 정의되어 있지 않을 경우 하드 코딩된 상수를 사용한다. 
+
+
+이렇게 논리 연산자의 좌변의 식을 평가해서 그 결과 값에 따라 우변의 표현식을 평가하지 않는 것을 단축 평가 <sup>Short-Circuit evaluation</sup>라고 부른다.
 
 > **단축 평가**
 > * false && (anything) : false 단락으로 평가된다.
@@ -92,7 +110,7 @@ var max = max_width || preferences.max_width || 500;
 이 연산자의 목적은 피연산자의 불리언 값을 반전, 즉 반대로 바꾸는 것이다.
 
 ```js
-!true // false
+!true  // false
 !false // true
 !"Cat" // false
 ```

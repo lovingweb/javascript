@@ -225,6 +225,8 @@ body,
     background-color: #f2f3fa;
     color: #5a62d7;
     font-family: "Fira Code", "Noto Sans KR", "Malgun Gothic", monospace;
+    font-size: .85em;
+    line-height: 1.6;
 }
 .markdown-section pre code {
     display: block;
@@ -371,10 +373,6 @@ body,
 .markdown-section sub a,
 .markdown-section sup a {
     border: 0;
-}
-
-.embed-nav ul li:first-child a {
-    color: #f00;
 }
 
 /* Code Highlight */
