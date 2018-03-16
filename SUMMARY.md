@@ -21,4 +21,6 @@
   * [4.5 Loops](/book/Loops.md)
   * [4.6 Jumps](/book/Jumps.md)
   * [4.7 Miscellaneus statements](/book/Miscellaneus-Statements.md)
-
+* 5. Objects
+* 6. Arrays
+* [7. Functions](/book/Functions.md)
