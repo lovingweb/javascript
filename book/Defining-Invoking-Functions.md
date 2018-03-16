@@ -126,7 +126,7 @@ add(3, 11); // 14
 
 글로벌 영역에 선언된 변수나 함수는 자바스크립트 엔진이 가장 최우선으로 해석한다. 즉 인터프리터가 코드를 해석하면서 코드 작성 순서에 상관없이 글로벌 영역에 선언된 문들을 먼저 수집하여 전역객체의 속성으로 등록시켜 두기 때문에 전역변수와 전역함수는 코드의 어떠한 위치에서도 실행이 가능하다. (단, 할당구문은 런타임 과정에 이루어지기 때문에 호이스팅되지 않는다.)
 
-함수 선언문의 경우, 함수 선언의 위치와는 상관없이 함수 선언문 형태로 정의한 함수의 유효 범위는 코드의 맨 처음부터 시작하는 것을 함수 호이스팅 <sup>Function hoisting</sup>이라고 한다.
+함수 선언문의 경우, 함수 선언의 위치와는 상관없이 함수 선언문 형태로 정의한 함수의 유효 범위는 코드의 맨 처음부터 시작하게 되는데, 이것을 함수 호이스팅 <sup>Function hoisting</sup>이라고 한다.
 
 아래의 코드를 보면 함수 선언문의 경우 함수가 선언되기 전에 함수 호출이 가능하다는 것을 알 수 있다.
 
@@ -147,6 +147,16 @@ var square = function(number) {
   return number * number;
 }
 ```
+
+즉, 함수 선언문은 호이스팅에 영향을 받지만, 함수 표현식은 호이스팅에 영향을 받지 않는다.
+
+아래의 문제를 풀어보자.
+
+<p data-height="260" data-theme-id="32424" data-slug-hash="YaGGjr" data-default-tab="js,result" data-user="aroree" data-embed-version="2" data-pen-title="YaGGjr" class="codepen">See the Pen <a href="https://codepen.io/aroree/pen/YaGGjr/">YaGGjr</a> by aroree (<a href="https://codepen.io/aroree">@aroree</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<p data-height="260" data-theme-id="32424" data-slug-hash="qoaaQr" data-default-tab="js,result" data-user="aroree" data-embed-version="2" data-pen-title="qoaaQr" class="codepen">See the Pen <a href="https://codepen.io/aroree/pen/qoaaQr/">qoaaQr</a> by aroree (<a href="https://codepen.io/aroree">@aroree</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 
 

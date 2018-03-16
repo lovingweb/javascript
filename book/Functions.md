@@ -21,10 +21,15 @@
 
 
 
-
+<!--
 
 
 http://insanehong.kr/post/javascript-function/
 
 http://meetup.toast.com/posts/118
 
+https://joshua1988.github.io/web-development/javascript/function-expressions-vs-declarations/
+
+
+
+-->
