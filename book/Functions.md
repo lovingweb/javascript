@@ -43,7 +43,7 @@ function 함수명() {
 ### 함수 표현식
 
 <pre class="syntax">
-function 함수명() {
+var 함수명 = function() {
     // 자바스크립트 코드
 }
 </pre>
