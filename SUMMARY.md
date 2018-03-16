@@ -1,7 +1,7 @@
 * [1. Basic Grammar](/book/Lexical-Structure.md) 
   * [1.1 Lexical structure](/book/Lexical-Structure.md)
 * [2. Types, Values and Variables](/book/Date-Type.md)
-  * [2.1 Date type](/book/Date-Type.md)
+  * [2.1 Data type](/book/Data-Type.md)
   * [2.2 Type conversions](/book/Type-Conversions.md)
 * [3. Expressions & Operators](/book/Expressions.md)
   * [3.1 Expressions](/book/Expressions.md)
