@@ -16,20 +16,3 @@
 그러므로, 자바스크립트의 함수는 일급 객체로 코드 재용, 정보의 구성 및 은닉 등에 사용하는 모듈화의 근간이다.
 
 ※ 함수의 특징은 공부를 좀 더 한 다음 다시 정리해보자.
-
-
-
-
-
-<!--
-
-
-http://insanehong.kr/post/javascript-function/
-
-http://meetup.toast.com/posts/118
-
-https://joshua1988.github.io/web-development/javascript/function-expressions-vs-declarations/
-
-
-
--->

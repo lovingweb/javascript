@@ -17,8 +17,8 @@
 > 리터럴 <sup>Literal</sup>은 값을 만드는 방법이다. 자바스크립트는 사용자가 제공한 리터럴 값을 받아 데이터를 만든다.
 
 <pre class="syntax">
-function 함수명() {
-    // 자바스크립트 코드
+function functionName(arg1, arg2, ... argN) {
+    functionBody
 }
 </pre>
 
@@ -148,8 +148,7 @@ var square = function(number) {
 }
 ```
 
-즉, 함수 선언문은 호이스팅에 영향을 받지만, 함수 표현식은 호이스팅에 영향을 받지 않는다.
-
+즉, 함수 선언문은 호이스팅에 영향을 받지만, 함수 표현식은 호이스팅에 영향을 받지 않는다.  
 아래의 문제를 풀어보자.
 
 <p data-height="260" data-theme-id="32424" data-slug-hash="YaGGjr" data-default-tab="js,result" data-user="aroree" data-embed-version="2" data-pen-title="YaGGjr" class="codepen">See the Pen <a href="https://codepen.io/aroree/pen/YaGGjr/">YaGGjr</a> by aroree (<a href="https://codepen.io/aroree">@aroree</a>) on <a href="https://codepen.io">CodePen</a>.</p>
