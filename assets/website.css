@@ -55,7 +55,7 @@ body,
     letter-spacing: 0;
 }
 .book-summary {
-    font-size: 1.6rem;
+    font-size: 1.6rem; 
 }
 .book.font-size-0 .book-body .page-inner section {
     font-size: 1.4rem;
