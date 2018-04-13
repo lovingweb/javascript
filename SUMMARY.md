@@ -27,3 +27,5 @@
   * [7.1 Defining & invoking functions](/book/Defining-Invoking-Functions.md)
   * [7.2 Function arguments and parameters](/book/Function-Arguments-Parameters.md)
   * [7.3 Functions as values](/book/Functions-As-Values.md)
+* 8. Methods
+  * [timers](/book/Timers.md)
